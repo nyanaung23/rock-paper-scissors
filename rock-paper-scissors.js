@@ -82,4 +82,6 @@ function playGame(rounds) {
   }
 }
 
+console.log("Welcome to the game!");
+
 playGame(2);
