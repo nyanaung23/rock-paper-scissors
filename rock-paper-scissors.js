@@ -14,19 +14,26 @@ function playRound(humanChoice, computerChoice) {
   const div1 = document.createElement("div");
   const div2 = document.createElement("div");
 
-  let resultMessage;
   if (humanChoice === computerChoice) {
-    resultMessage = "It's a tie!";
-  } else if (
+    const tieDiv = document.createElement("div");
+    tieDiv.textContent = "This is a tie round!";
+    container.appendChild(tieDiv);
+  } 
+  else if (
     (humanChoice === "rock" && computerChoice === "scissor") ||
     (humanChoice === "paper" && computerChoice === "rock") ||
     (humanChoice === "scissor" && computerChoice === "paper")
   ) {
     humanScore++;
-    resultMessage = "You win!";
-  } else {
+    const playerWinDiv = document.createElement("div");
+    playerWinDiv.textContent = "You win this round!";
+    container.appendChild(playerWinDiv);
+  } 
+  else {
     computerScore++;
-    resultMessage = "You lose!";
+    const computerWinDiv = document.createElement("div");
+    computerWinDiv.textContent = "You lose this round!";
+    container.appendChild(computerWinDiv);
   }
 
   div.textContent = "Your Choice: " + humanChoice;
@@ -37,17 +44,17 @@ function playRound(humanChoice, computerChoice) {
   container.appendChild(div1);
   container.appendChild(div2);
 
-  if (computerScore == 5 || playerScore == 5) {
+  if (computerScore === 3 || humanScore === 3) {
     const div3 = document.createElement("div");
-    if (playerScore == 5) {
-      div3.textContent = "You Win!";
+    if (humanScore === 3) {
+      div3.textContent = "You Win The Game!";
     }
-    else if (playerScore == 5) {
-      div3.textContent = "Computer Win!";
+    else if (computerScore === 3) {
+      div3.textContent = "Computer Win The Game!";
     }
+    container.appendChild(div3);
+    disableGame();
   }
-  container.appendChild(div3);
-  disableGame();
 }
 
 function setupEventListeners() {
