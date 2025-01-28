@@ -69,22 +69,25 @@ function setupEventListeners() {
   const rockBtn = document.querySelector("#rock");
   const paperBtn = document.querySelector("#paper");
   const scissorBtn = document.querySelector("#scissor");
-  const picture = document.querySelector("#paperPic");
+  const image = document.querySelector("#paperPic");
 
   rockBtn.addEventListener("click", () => {
     const humanChoice = "rock";
+    image.src = "./rps-images/rock.webp";
     const computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
   });
 
   paperBtn.addEventListener("click", () => {
     const humanChoice = "paper";
+    image.src = "./rps-images/paper.webp";
     const computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
   });
 
   scissorBtn.addEventListener("click", () => {
     const humanChoice = "scissor";
+    image.src = "./rps-images/scissor.webp";
     const computerChoice = getComputerChoice();
     playRound(humanChoice, computerChoice);
   });
