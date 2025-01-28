@@ -1,0 +1,92 @@
+#game{
+    display: flexbox;
+    text-align: center;
+    padding-top: 1%;
+}
+
+h1{
+    text-align: center;
+}
+
+#one{
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#two{
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+button{
+    text-align: center;
+    display: inline;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-right: 3%;
+    margin-left: 3%;
+    font-size: 15px;
+}
+
+#click{
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+button:hover{
+    opacity: 0.5;
+}
+
+#rock, #rock2{
+    border: 2px solid gray;
+    background-color: white;
+}
+
+#paper, #paper2{
+    border: 2px solid black;
+    background-color: white;
+}
+
+#scissor, #scissor2{
+    border: 2px solid rgb(159, 12, 12);
+    background-color: white;
+}
+
+#container{
+    text-align: center;
+    padding: 0.5;
+    padding-top: 2%;
+    line-height: 1.5;
+    font-size: 17px;
+}
+
+#pictureContainer1, #pictureContainer2{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+#paperPic, #paperPic2 {
+    height: 100px;
+    width: auto;
+}
+
+#submitContainer{
+    display: flexbox;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#submit{
+    font-size: 17px;
+    background-color: rgb(221, 111, 0);
+    color: white;
+    padding: 8px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
