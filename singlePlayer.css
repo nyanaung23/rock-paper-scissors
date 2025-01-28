@@ -44,3 +44,14 @@ button:hover{
     padding: 0.5;
     padding-top: 3%;
 }
+
+#pictureContainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#paperPic {
+    height: 100px;
+    width: auto;
+}

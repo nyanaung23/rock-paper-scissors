@@ -50,10 +50,18 @@ function playRound(humanChoice, computerChoice) {
       div3.textContent = "You Win The Game!";
     }
     else if (computerScore === 3) {
-      div3.textContent = "Computer Win The Game!";
+      div3.textContent = "Computer Wins The Game!";
     }
     container.appendChild(div3);
     disableGame();
+
+    const restartBtn = document.createElement("button");
+    restartBtn.textContent = "Play Again?";
+    restartBtn.addEventListener("click", () => {
+      window.location.reload();
+    });
+
+    container.appendChild(restartBtn);
   }
 }
 
@@ -61,6 +69,7 @@ function setupEventListeners() {
   const rockBtn = document.querySelector("#rock");
   const paperBtn = document.querySelector("#paper");
   const scissorBtn = document.querySelector("#scissor");
+  const picture = document.querySelector("#paperPic");
 
   rockBtn.addEventListener("click", () => {
     const humanChoice = "rock";
