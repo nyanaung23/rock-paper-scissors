@@ -3,21 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissor</title>
+  <title>Rock Paper Scissor - Single Player</title>
   <link rel="stylesheet" href="singlePlayer.css">
   <script src="singlePlayer.js" defer></script>
 </head>
+
 <body>
-  <h1>This is a demo Rock Paper Scissor game.</h1>
-  <div id="pictureContainer">
-    <img id="paperPic" src="./rps-images/paper.webp">
-  </div>
-  <h1>Player Choice</h1>
-  <div id="click">
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissor">Scissor</button>
-  </div>
-  <div id="container"></div>
+
+  <nav class="navbar">
+      <ul>
+        <li><a href="">Game Modes</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+  </nav>
+
+  <main>
+    <h1>This is a demo Rock Paper Scissor game.</h1>
+
+    <div class="gridBox">
+      <div id="lefthand">
+        <img id="paperPic" src="./rps-images/paper.webp" alt="Paper Image">
+        <h1>Left Hand</h1>
+        <div id="click">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissor">Scissor</button>
+    
+          <div id="container"></div>
+        </div>
+      </div>
+  
+      <div id="righthand">
+        <img id="paperPic" src="./rps-images/paper.webp" alt="Paper Image">
+        <h1>Right Hand</h1>
+        <div id="click">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissor">Scissor</button>
+          <div id="container"></div>
+        </div>
+        </div>
+
+    </div>
+
+    
+  </main>
 </body>
 </html>

@@ -1,5 +1,55 @@
+body{
+    margin: 0px;
+}
+
+/*nav bar start */
+.navbar{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    background-color: darkgrey;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%; 
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    opacity: 0.5;
+}
+
+.navbar li{
+    flex: 1;
+    text-align: center;
+    padding: 10px 3vh 10px 3vh;
+}
+/* navbar code end */
+
 h1{
     text-align: center;
+}
+
+.gridBox {
+    display:grid;
+    padding-top: 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
 }
 
 button{
@@ -52,6 +102,6 @@ button:hover{
 }
 
 #paperPic {
-    height: 100px;
+    height: 20vh;
     width: auto;
 }
